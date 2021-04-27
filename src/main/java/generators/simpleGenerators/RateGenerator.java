@@ -5,15 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 public class RateGenerator implements Generator {
-    Random random;
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
+    private final Random random;
 
     public RateGenerator(Random random) {
         this.random = random;

@@ -5,28 +5,12 @@ import java.util.List;
 import java.util.Random;
 
 public class StringGenerator implements Generator {
-    Random random;
-    List<String> input;
-
-    public List<String> getInput() {
-        return input;
-    }
-
-    public void setInput(List<String> input) {
-        this.input = input;
-    }
-
-    public Random getRandom() {
-        return random;
-    }
+    private final Random random;
+    private final List<String> input;
 
     public StringGenerator(Random random, List<String> input) {
         this.random = random;
         this.input = input;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
     }
 
     @Override

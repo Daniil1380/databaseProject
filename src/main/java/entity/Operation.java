@@ -1,47 +1,15 @@
 package entity;
 
 public class Operation extends Entity{
-    int clientId;
-    int shareId;
-    int count;
-    String buySell;
+    private final int clientId;
+    private final int shareId;
+    private final int count;
+    private final String buySell;
 
     public Operation(int clientId, int shareId, int count, String buySell) {
         this.clientId = clientId;
         this.shareId = shareId;
         this.count = count;
-        this.buySell = buySell;
-    }
-
-    public int getClientId() {
-        return clientId;
-    }
-
-    public void setClientId(int clientId) {
-        this.clientId = clientId;
-    }
-
-    public int getShareId() {
-        return shareId;
-    }
-
-    public void setShareId(int shareId) {
-        this.shareId = shareId;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
-
-    public String getBuySell() {
-        return buySell;
-    }
-
-    public void setBuySell(String buySell) {
         this.buySell = buySell;
     }
 

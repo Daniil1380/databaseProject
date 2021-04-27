@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Random;
 
 public class NameGenerator implements Generator {
-    PersonNames[] persons;
-    int maxSize;
-    Random random;
+    private final PersonNames[] persons;
+    private int maxSize;
+    private final Random random;
 
     public NameGenerator(PersonNames[] persons, int maxSize, Random random) {
         this.persons = persons;
@@ -18,29 +18,6 @@ public class NameGenerator implements Generator {
         this.random = random;
     }
 
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
-
-    public PersonNames[] getPersons() {
-        return persons;
-    }
-
-    public void setPersons(PersonNames[] persons) {
-        this.persons = persons;
-    }
-
-    public int getMaxSize() {
-        return maxSize;
-    }
-
-    public void setMaxSize(int maxSize) {
-        this.maxSize = maxSize;
-    }
 
     public List<String> generate(int elements){
         if (maxSize<3) maxSize=3;

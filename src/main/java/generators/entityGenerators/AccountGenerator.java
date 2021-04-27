@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Random;
 
 public class AccountGenerator implements EntityGenerator{
-    Random random;
+    private final Random random;
 
     public AccountGenerator(Random random) {
         this.random = random;
@@ -16,10 +16,6 @@ public class AccountGenerator implements EntityGenerator{
 
     public Random getRandom() {
         return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
     }
 
     @Override

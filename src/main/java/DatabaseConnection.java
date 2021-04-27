@@ -1,20 +1,16 @@
 import entity.Entity;
 import generators.MainGenerator;
-import generators.entityGenerators.*;
-import jsonEntity.PersonNames;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.io.File;
 import java.io.IOException;
 import java.sql.*;
 import java.util.List;
-import java.util.Random;
 
 public class DatabaseConnection {
     public static void main(String[] args) throws SQLException, IOException {
         MainGenerator mainGenerator = new MainGenerator();
-        List<List<Entity>> list = mainGenerator.generate(1);
-
+        //можно сделать ввод чисел с консоли через Scanner, но это все же не пользовательская программа,
+        //поэтому оставил так
+        List<Integer> countList = List.of(10, 10, 10, 10, 10, 10, 10, 10, 10);
+        List<List<Entity>> list = mainGenerator.generate(countList);
         try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/investing",
                 "postgres", "root")){
             Statement statement = connection.createStatement();

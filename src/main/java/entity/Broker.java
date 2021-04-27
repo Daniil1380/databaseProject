@@ -1,38 +1,14 @@
 package entity;
 
 public class Broker extends Entity{
-    String name;
-    String country;
-    boolean state;
+    private final String name;
+    private final String country;
+    private final boolean state;
 
 
     public Broker(String name, String country, boolean state) {
         this.name = name;
         this.country = country;
-        this.state = state;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public boolean getState() {
-        return state;
-    }
-
-    public void setState(boolean state) {
         this.state = state;
     }
 

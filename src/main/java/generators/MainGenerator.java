@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class MainGenerator {
 
-     public List<List<Entity>> generate(int n) throws JsonProcessingException {
+     public List<List<Entity>> generate(List<Integer> countList) throws JsonProcessingException {
          List<List<Entity>> list = new ArrayList<List<Entity>>();
          JSONParser jsonParser = new JSONParser(new ObjectMapper());
 
@@ -34,15 +34,15 @@ public class MainGenerator {
          OperationGenerator operationGenerator = new OperationGenerator(random);
 
 
-         list.add(clientGenerator.generate(n));
-         list.add(brokerGenerator.generate(n));
-         list.add(holidayGenerator.generate(n));
-         list.add(rateEntityGenerator.generate(n));
-         list.add(accountGenerator.generate(n));
-         list.add(stockExchangeGenerator.generate(n));
-         list.add(shareGenerator.generate(n));
-         list.add(holidayStockExchangeGenerator.generate(n));
-         list.add(operationGenerator.generate(n));
+         list.add(clientGenerator.generate(countList.get(0)));
+         list.add(brokerGenerator.generate(countList.get(1)));
+         list.add(holidayGenerator.generate(countList.get(2)));
+         list.add(rateEntityGenerator.generate(countList.get(3)));
+         list.add(accountGenerator.generate(countList.get(4)));
+         list.add(stockExchangeGenerator.generate(countList.get(5)));
+         list.add(shareGenerator.generate(countList.get(6)));
+         list.add(holidayStockExchangeGenerator.generate(countList.get(7)));
+         list.add(operationGenerator.generate(countList.get(8)));
 
          return list;
      }

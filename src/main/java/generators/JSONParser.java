@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class JSONParser {
-    ObjectMapper mapper;
+    private final ObjectMapper mapper;
 
     public JSONParser(ObjectMapper mapper) {
         this.mapper = mapper;

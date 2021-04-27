@@ -6,27 +6,11 @@ import java.util.List;
 import java.util.Random;
 
 public class DateGenerator implements Generator {
-    int start;
-    int length;
+    private final int start;
+    private final int length;
 
     public DateGenerator(int start, int length) {
         this.start = start;
-        this.length = length;
-    }
-
-    public int getStart() {
-        return start;
-    }
-
-    public void setStart(int start) {
-        this.start = start;
-    }
-
-    public int getLength() {
-        return length;
-    }
-
-    public void setLength(int length) {
         this.length = length;
     }
 

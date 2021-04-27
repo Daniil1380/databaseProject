@@ -1,11 +1,11 @@
 package entity;
 
 public class StockExchange extends Entity{
-    String name;
-    String territory;
-    String currency;
-    String dayStart;
-    String dayEnd;
+    private final String name;
+    private final String territory;
+    private final String currency;
+    private final String dayStart;
+    private final String dayEnd;
 
 
     public StockExchange(String name, String territory, String currency, String dayStart, String dayEnd) {
@@ -13,46 +13,6 @@ public class StockExchange extends Entity{
         this.territory = territory;
         this.currency = currency;
         this.dayStart = dayStart;
-        this.dayEnd = dayEnd;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getTerritory() {
-        return territory;
-    }
-
-    public void setTerritory(String territory) {
-        this.territory = territory;
-    }
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
-
-    public String getDayStart() {
-        return dayStart;
-    }
-
-    public void setDayStart(String dayStart) {
-        this.dayStart = dayStart;
-    }
-
-    public String getDayEnd() {
-        return dayEnd;
-    }
-
-    public void setDayEnd(String dayEnd) {
         this.dayEnd = dayEnd;
     }
 

@@ -10,15 +10,7 @@ import java.util.List;
 import java.util.Random;
 
 public class BrokerGenerator implements EntityGenerator {
-    Random random;
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
+    private final Random random;
 
     public BrokerGenerator(Random random) {
         this.random = random;

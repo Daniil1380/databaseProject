@@ -8,17 +8,9 @@ import java.util.List;
 import java.util.Random;
 
 public class HolidayStockExchangeGenerator implements EntityGenerator{
-    Random random;
+    private final Random random;
 
     public HolidayStockExchangeGenerator(Random random) {
-        this.random = random;
-    }
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
         this.random = random;
     }
 

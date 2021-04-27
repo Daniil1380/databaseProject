@@ -5,33 +5,9 @@ import java.util.List;
 import java.util.Random;
 
 public class TimeGenerator implements Generator {
-    Random random;
-    int end;
-    int start;
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public int getStart() {
-        return start;
-    }
-
-    public void setStart(int start) {
-        this.start = start;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
-
-    public int getEnd() {
-        return end;
-    }
-
-    public void setEnd(int end) {
-        this.end = end;
-    }
+    private final Random random;
+    private final int end;
+    private final int start;
 
     public TimeGenerator(Random random, int start, int end) {
         this.random = random;

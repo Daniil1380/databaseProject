@@ -5,15 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 public class BuySellGenerator implements Generator {
-    private Random random;
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
+    private final Random random;
 
     public BuySellGenerator(Random random) {
         this.random = random;

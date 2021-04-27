@@ -1,17 +1,9 @@
 package entity;
 
 public class Holiday extends Entity{
-    String day;
+    private final String day;
 
     public Holiday(String day) {
-        this.day = day;
-    }
-
-    public String getDay() {
-        return day;
-    }
-
-    public void setDay(String day) {
         this.day = day;
     }
 

@@ -10,17 +10,9 @@ import java.util.List;
 import java.util.Random;
 
 public class ShareGenerator implements EntityGenerator{
-    Random random;
+    private final Random random;
 
     public ShareGenerator(Random random) {
-        this.random = random;
-    }
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
         this.random = random;
     }
 
@@ -30,7 +22,7 @@ public class ShareGenerator implements EntityGenerator{
         List<String> shares = shareGenerator.generate(elements);
         List<Entity> list = new ArrayList<>();
         for (int i = 0; i < elements; i++) {
-            Share share = new Share(shares.get(i), random.nextInt(elements)+1, random.nextDouble(), random.nextInt());
+            Share share = new Share(shares.get(i), random.nextInt(elements)+1, random.nextDouble(), random.nextInt(1000));
             list.add(share);
         }
         return list;

@@ -12,37 +12,13 @@ import java.util.Random;
 
 public class ClientGenerator implements EntityGenerator{
 
-    PersonNames[] personNames;
-    PersonNames[] personSurnames;
-    Random random;
+    private final PersonNames[] personNames;
+    private final PersonNames[] personSurnames;
+    private final Random random;
 
     public ClientGenerator(PersonNames[] personNames, PersonNames[] personSurnames, Random random) {
         this.personNames = personNames;
         this.personSurnames = personSurnames;
-        this.random = random;
-    }
-
-    public PersonNames[] getPersonNames() {
-        return personNames;
-    }
-
-    public void setPersonNames(PersonNames[] personNames) {
-        this.personNames = personNames;
-    }
-
-    public PersonNames[] getPersonSurnames() {
-        return personSurnames;
-    }
-
-    public void setPersonSurnames(PersonNames[] personSurnames) {
-        this.personSurnames = personSurnames;
-    }
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
         this.random = random;
     }
 
